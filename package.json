@@ -1,11 +1,26 @@
 {
   "name": "intro_node",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000i\u0000n\u0000t\u0000r\u0000o\u0000_\u0000n\u0000o\u0000d\u0000e\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leuow95/intro_node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Leuow95/intro_node/issues"
+  },
+  "homepage": "https://github.com/Leuow95/intro_node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
 }
