@@ -56,6 +56,15 @@ app.put('/mensagens/:id', (req, res) => {
   res.send(`Mensagem atualizada com sucesso: '${mensagem}'.`);
 });
 
+// [DELETE] /mensagens/{id} - Deleta uma Mensagem pelo ID
+app.delete('/mensagens/:id', (req, res) => {
+  const id = req.params.id -1;
+  delete mensagens[id];
+
+  res.send('Mensagem removida com sucesso');
+})
+
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 })
